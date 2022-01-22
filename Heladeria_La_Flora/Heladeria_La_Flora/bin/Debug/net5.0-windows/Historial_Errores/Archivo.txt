@@ -1,0 +1,21 @@
+*** MESSAGE ***
+There is an error in XML document (0, 0).
+*** STACK TRACE ***
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader)
+   at Entidades.Archivos`1.Deserializar(String path) in C:\Users\Usuario\Desktop\Proyecto ari Formal\Heladeria_La_Flora\Entidades\Archivos.cs:line 51
+*** INNER EXCEPTION***
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Usuario\Desktop\Nueva carpeta (3)\archivo.xml'.
+File name: 'C:\Users\Usuario\Desktop\Nueva carpeta (3)\archivo.xml'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderHeladeria.Read4_Heladeria()
+__________________________________
